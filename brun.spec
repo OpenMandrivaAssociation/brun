@@ -50,3 +50,7 @@ Simple calculator application built with MauiKit.
 %ninja_install -C build
 
 %files
+%{_bindir}/brun
+%{_datadir}/applications/org.kde.brun.desktop
+%{_datadir}/metainfo/org.kde.brun.appdata.xml
+%{_iconsdir}/hicolor/scalable/apps/brun.svg
