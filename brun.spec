@@ -1,11 +1,11 @@
 #define snapshot 20220107
 
-Name:		bonsai
-Version:	1.0.2
+Name:		brun
+Version:	0.0.5
 Release:	%{?snapshot:0.%{snapshot}.}1
-Summary:	Git repository manager for Plasma Mobile
+Summary:	Simple calculator application built with MauiKit.
 URL:    	https://mauikit.org
-Source0:	https://invent.kde.org/maui/bonsai/-/archive/%{?snapshot:master}%{!?snapshot:v%{version}}/%{name}-%{?snapshot:master}%{!?snapshot:v%{version}}.tar.bz2%{?snapshot:#/%{name}-%{snapshot}.tar.bz2}
+Source0:	https://invent.kde.org/maui/brun/-/archive/%{?snapshot:master}%{!?snapshot:v%{version}}/%{name}-%{?snapshot:master}%{!?snapshot:v%{version}}.tar.bz2%{?snapshot:#/%{name}-%{snapshot}.tar.bz2}
 License:	GPLv3
 Group:		Development/Tools
 BuildRequires:	cmake
@@ -19,7 +19,9 @@ BuildRequires:	cmake(Qt5Svg)
 BuildRequires:	cmake(Qt5QuickControls2)
 BuildRequires:	cmake(Qt5Xml)
 BuildRequires:	cmake(KF5I18n)
+BuildRequires:  cmake(KF5Config)
 BuildRequires:	cmake(KF5CoreAddons)
+BuildRequires:  cmake(KF5UnitConversion)
 BuildRequires:	cmake(MauiKit)
 BuildRequires:  cmake(MauiKitFileBrowsing)
 BuildRequires:	gettext
@@ -32,7 +34,7 @@ BuildRequires:	cmake(Qt5Quick)
 BuildRequires:	cmake(Qt5Widgets)
 
 %description
-Git repository manager for Plasma Mobile
+Simple calculator application built with MauiKit.
 
 %prep
 %autosetup -p1 -n %{name}-%{?snapshot:master}%{!?snapshot:v%{version}}
@@ -43,7 +45,5 @@ Git repository manager for Plasma Mobile
 
 %install
 %ninja_install -C build
-
-%find_lang bonsai
 
 %files
