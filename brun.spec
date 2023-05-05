@@ -8,6 +8,7 @@ URL:    	https://mauikit.org
 Source0:	https://invent.kde.org/maui/brun/-/archive/%{?snapshot:master}%{!?snapshot:v%{version}}/%{name}-%{?snapshot:master}%{!?snapshot:v%{version}}.tar.bz2%{?snapshot:#/%{name}-%{snapshot}.tar.bz2}
 License:	GPLv3
 Group:		Development/Tools
+BuildRequires:  bison
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
