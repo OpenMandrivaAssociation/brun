@@ -10,6 +10,7 @@ License:	GPLv3
 Group:		Development/Tools
 BuildRequires:  bison
 BuildRequires:	cmake
+BuildRequires:  flex
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt5Core)
