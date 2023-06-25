@@ -2,7 +2,7 @@
 
 Name:		brun
 Version:	0.0.5
-Release:	%{?snapshot:0.%{snapshot}.}1
+Release:	%{?snapshot:0.%{snapshot}.}2
 Summary:	Simple calculator application built with MauiKit.
 URL:    	https://mauikit.org
 Source0:	https://invent.kde.org/maui/brun/-/archive/%{?snapshot:master}%{!?snapshot:v%{version}}/%{name}-%{?snapshot:master}%{!?snapshot:v%{version}}.tar.bz2%{?snapshot:#/%{name}-%{snapshot}.tar.bz2}
