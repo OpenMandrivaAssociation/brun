@@ -10,6 +10,18 @@ diff -uraN brun-v0.0.5/CMakeLists.txt omv-brun-v0.0.5/CMakeLists.txt
  
  find_package(GMP)
  set_package_properties(GMP PROPERTIES
+diff -uraN brun-v0.0.5/src/CMakeLists.txt omv-brun-v0.0.5/src/CMakeLists.txt
+--- brun-v0.0.5/src/CMakeLists.txt	2022-08-20 17:58:59.000000000 +0200
++++ omv-brun-v0.0.5/src/CMakeLists.txt	2024-01-10 16:51:26.048299863 +0100
+@@ -39,7 +39,7 @@
+ 
+ target_link_libraries(${PROJECT_NAME}
+     PRIVATE
+-    MauiKit
++    MauiKit3
+ 
+     Qt${QT_VERSION_MAJOR}::Core
+     Qt${QT_VERSION_MAJOR}::Quick
 diff -uraN brun-v0.0.5/src/code/main.cpp omv-brun-v0.0.5/src/code/main.cpp
 --- brun-v0.0.5/src/code/main.cpp	2022-08-20 17:58:59.000000000 +0200
 +++ omv-brun-v0.0.5/src/code/main.cpp	2024-01-10 16:25:01.429463088 +0100
