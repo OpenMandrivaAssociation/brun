@@ -2,7 +2,7 @@
 
 Name:		brun
 Version:	0.0.5
-Release:	%{?snapshot:0.%{snapshot}.}2
+Release:	%{?snapshot:0.%{snapshot}.}3
 Summary:	Simple calculator application built with MauiKit.
 URL:    	https://mauikit.org
 Source0:	https://invent.kde.org/maui/brun/-/archive/%{?snapshot:master}%{!?snapshot:v%{version}}/%{name}-%{?snapshot:master}%{!?snapshot:v%{version}}.tar.bz2%{?snapshot:#/%{name}-%{snapshot}.tar.bz2}
@@ -24,8 +24,8 @@ BuildRequires:	cmake(KF5I18n)
 BuildRequires:  cmake(KF5Config)
 BuildRequires:	cmake(KF5CoreAddons)
 BuildRequires:  cmake(KF5UnitConversion)
-BuildRequires:	cmake(MauiKit)
-BuildRequires:  cmake(MauiKitFileBrowsing)
+BuildRequires:	cmake(MauiKit3)
+BuildRequires:  cmake(MauiKitFileBrowsing3)
 BuildRequires:	gettext
 BuildRequires:  pkgconfig(gmp)
 BuildRequires:  pkgconfig(mpfr)
