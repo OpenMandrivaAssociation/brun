@@ -1,0 +1,12 @@
+diff -uraN brun-v0.0.5/src/code/main.cpp omv-brun-v0.0.5/src/code/main.cpp
+--- brun-v0.0.5/src/code/main.cpp	2022-08-20 17:58:59.000000000 +0200
++++ omv-brun-v0.0.5/src/code/main.cpp	2024-01-10 16:25:01.429463088 +0100
+@@ -4,7 +4,7 @@
+ #include <QDate>
+ #include <QIcon>
+ 
+-#include <MauiKit/Core/mauiapp.h>
++#include <MauiKit3/Core/mauiapp.h>
+ 
+ #include <KAboutData>
+ #include <KI18n/KLocalizedString>
