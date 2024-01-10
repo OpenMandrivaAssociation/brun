@@ -6,6 +6,7 @@ Release:	%{?snapshot:0.%{snapshot}.}3
 Summary:	Simple calculator application built with MauiKit.
 URL:    	https://mauikit.org
 Source0:	https://invent.kde.org/maui/brun/-/archive/%{?snapshot:master}%{!?snapshot:v%{version}}/%{name}-%{?snapshot:master}%{!?snapshot:v%{version}}.tar.bz2%{?snapshot:#/%{name}-%{snapshot}.tar.bz2}
+Patch0:   fix-build-with-mauikit-3.0.2.patch
 License:	GPLv3
 Group:		Development/Tools
 BuildRequires:  bison
