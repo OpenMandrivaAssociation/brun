@@ -1,3 +1,15 @@
+diff -uraN brun-v0.0.5/CMakeLists.txt omv-brun-v0.0.5/CMakeLists.txt
+--- brun-v0.0.5/CMakeLists.txt	2022-08-20 17:58:59.000000000 +0200
++++ omv-brun-v0.0.5/CMakeLists.txt	2024-01-10 16:32:29.066471025 +0100
+@@ -46,7 +46,7 @@
+     TYPE OPTIONAL
+     )
+ 
+-find_package(MauiKit)
++find_package(MauiKit3)
+ 
+ find_package(GMP)
+ set_package_properties(GMP PROPERTIES
 diff -uraN brun-v0.0.5/src/code/main.cpp omv-brun-v0.0.5/src/code/main.cpp
 --- brun-v0.0.5/src/code/main.cpp	2022-08-20 17:58:59.000000000 +0200
 +++ omv-brun-v0.0.5/src/code/main.cpp	2024-01-10 16:25:01.429463088 +0100
